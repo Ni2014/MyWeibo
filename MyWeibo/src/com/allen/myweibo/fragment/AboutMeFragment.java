@@ -1,4 +1,7 @@
 package com.allen.myweibo.fragment;
+
+import com.allen.myweibo.R;
+
 /**
  * 个人
  * @author hadoop
@@ -8,8 +11,7 @@ public class AboutMeFragment extends BaseFragment {
 
 	@Override
 	protected int getLayoutId() {
-		// TODO Auto-generated method stub
-		return 0;
+		return R.layout.fragment_me;
 	}
 
 	@Override

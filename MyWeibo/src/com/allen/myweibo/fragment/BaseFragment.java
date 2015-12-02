@@ -1,5 +1,6 @@
 package com.allen.myweibo.fragment;
 
+import de.greenrobot.event.EventBus;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
@@ -20,12 +21,24 @@ public abstract class BaseFragment extends Fragment {
 	}
 
 	@Override
+	public void onResume() {
+		super.onResume();
+		EventBus.getDefault().register(this);
+	}
+
+	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(getLayoutId(), container, false);
 		initParams();
 
 		return view;
+	}
+
+	@Override
+	public void onPause() {
+		super.onPause();
+		EventBus.getDefault().unregister(this);
 	}
 
 	/**
