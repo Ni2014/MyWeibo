@@ -2,9 +2,9 @@ package com.allen.myweibo.activity;
 
 import com.allen.myweibo.utils.ActivityStack;
 
-
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.Window;
 
 public abstract class BaseActivity extends FragmentActivity {
 
@@ -14,8 +14,14 @@ public abstract class BaseActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		ActivityStack.getInstance().addActivity(this);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(getLayoutId());
+		findViews();
 		isCreate = true;
+
+	}
+
+	protected void findViews() {
 
 	}
 

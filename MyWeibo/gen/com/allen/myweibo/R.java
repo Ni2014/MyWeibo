@@ -10,29 +10,130 @@ package com.allen.myweibo;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int black=0x7f040001;
+        public static final int dark_gray=0x7f040002;
+        public static final int light_gray=0x7f040004;
+        public static final int middle_gray=0x7f040003;
+        public static final int origin=0x7f040000;
+        public static final int white=0x7f040005;
+    }
+    public static final class dimen {
+        public static final int text_size_large=0x7f050002;
+        public static final int text_size_middle=0x7f050003;
+        public static final int text_size_small=0x7f050004;
+        public static final int text_size_xlarge=0x7f050001;
+        public static final int text_size_xsmall=0x7f050005;
+        /**  TextSize 
+         */
+        public static final int text_size_xxlarge=0x7f050000;
+        public static final int text_size_xxsmall=0x7f050006;
+    }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int card_weibo_icon=0x7f020000;
+        public static final int compose_product_plus=0x7f020001;
+        public static final int findfriend_businesscard_userinfo_me_relationship_indicator_plus=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int message_add_background=0x7f020004;
+        public static final int message_choosegroup=0x7f020005;
+        public static final int message_privatechat_background=0x7f020006;
+        public static final int message_privatechat_background_highlight=0x7f020007;
+        public static final int message_privatechat_time_background=0x7f020008;
+        public static final int messages_card_arrow=0x7f020009;
+        public static final int messagescenter_at=0x7f02000a;
+        public static final int messagescenter_comments=0x7f02000b;
+        public static final int messagescenter_good=0x7f02000c;
+        public static final int messagescenter_messagebox=0x7f02000d;
+        public static final int messagescenter_subscription=0x7f02000e;
+        public static final int navigationbar_arrow_down=0x7f02000f;
+        public static final int navigationbar_back=0x7f020010;
+        public static final int navigationbar_back_highlighted=0x7f020011;
+        public static final int navigationbar_close_highlighted=0x7f020012;
+        public static final int navigationbar_friendattention=0x7f020013;
+        public static final int navigationbar_friendattention_dot_highlighted=0x7f020014;
+        public static final int navigationbar_friendattention_highlighted=0x7f020015;
+        public static final int navigationbar_home=0x7f020016;
+        public static final int navigationbar_home_highlighted=0x7f020017;
+        public static final int navigationbar_icon_radar_animation_ring=0x7f020018;
+        public static final int profile_album=0x7f020019;
+        public static final int profile_comments=0x7f02001a;
+        public static final int profile_drafts=0x7f02001b;
+        public static final int profile_edit_info=0x7f02001c;
+        public static final int profile_friends=0x7f02001d;
+        public static final int profile_more=0x7f02001e;
+        public static final int profile_praise=0x7f02001f;
+        public static final int profile_vip=0x7f020020;
+        public static final int profile_weibo_pay=0x7f020021;
+        public static final int profile_weibo_rank=0x7f020022;
+        public static final int profile_weibo_sport=0x7f020023;
+        public static final int radar_card_guide_hot=0x7f020024;
+        public static final int selector_tabbar_discover=0x7f020025;
+        public static final int selector_tabbar_home=0x7f020026;
+        public static final int selector_tabbar_msg=0x7f020027;
+        public static final int selector_tabbar_plus=0x7f020028;
+        public static final int selector_tabbar_profile=0x7f020029;
+        public static final int selector_tabbar_text_color=0x7f02002a;
+        public static final int shape_line=0x7f02002b;
+        public static final int tabbar_compose_camera=0x7f02002c;
+        public static final int tabbar_compose_icon_add=0x7f02002d;
+        public static final int tabbar_compose_icon_add_highlighted=0x7f02002e;
+        public static final int tabbar_compose_idea=0x7f02002f;
+        public static final int tabbar_compose_lbs=0x7f020030;
+        public static final int tabbar_compose_more=0x7f020031;
+        public static final int tabbar_compose_photo=0x7f020032;
+        public static final int tabbar_compose_review=0x7f020033;
+        public static final int tabbar_discover=0x7f020034;
+        public static final int tabbar_discover_highlighted=0x7f020035;
+        public static final int tabbar_home_highlighted=0x7f020036;
+        public static final int tabbar_message_center=0x7f020037;
+        public static final int tabbar_message_center_highlighted=0x7f020038;
+        public static final int tabbar_profile=0x7f020039;
+        public static final int tabbar_profile_highlighted=0x7f02003a;
+        public static final int userinfo_me_relationship_indicator_plus=0x7f02003b;
+        public static final int videoplayer_icon_back_highlighted=0x7f02003c;
+        public static final int welcome_android_logo=0x7f02003d;
+        public static final int welcome_android_slogan=0x7f02003e;
+    }
+    public static final class id {
+        public static final int home_iv_chat=0x7f08000d;
+        public static final int home_iv_friendattention=0x7f080008;
+        public static final int home_iv_rader=0x7f08000a;
+        public static final int home_tv_account=0x7f080009;
+        public static final int home_tv_find_group=0x7f08000b;
+        public static final int home_tv_message=0x7f08000c;
+        public static final int main_rb_discover=0x7f080006;
+        public static final int main_rb_home=0x7f080003;
+        public static final int main_rb_message=0x7f080004;
+        public static final int main_rb_plus=0x7f080005;
+        public static final int main_rb_profile=0x7f080007;
+        public static final int main_rg_menu=0x7f080002;
+        public static final int main_rllyt_all=0x7f080000;
+        public static final int main_vp_viewpager=0x7f080001;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int fragment_discover=0x7f030001;
         public static final int fragment_home=0x7f030002;
-        public static final int fragment_me=0x7f030003;
-        public static final int fragment_message=0x7f030004;
+        public static final int fragment_message=0x7f030003;
+        public static final int fragment_profile=0x7f030004;
+        public static final int fragment_setting=0x7f030005;
+        public static final int fragment_splash=0x7f030006;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int hello_world=0x7f040001;
+        public static final int app_name=0x7f060000;
+        public static final int main_activity=0x7f060001;
     }
     public static final class style {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -46,10 +147,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f050001;
+        public static final int AppTheme=0x7f070002;
+        public static final int tab_rb_style=0x7f070001;
     }
 }

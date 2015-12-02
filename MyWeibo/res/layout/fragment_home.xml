@@ -1,12 +1,54 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       />
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/home_iv_friendattention"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/navigationbar_friendattention" />
+
+        <TextView
+            android:id="@+id/home_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="账号"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageView
+            android:id="@+id/home_iv_rader"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/navigationbar_icon_radar_animation_ring" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shape_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </ScrollView>
+
+</LinearLayout>

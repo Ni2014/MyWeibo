@@ -11,7 +11,7 @@ public class AboutMeFragment extends BaseFragment {
 
 	@Override
 	protected int getLayoutId() {
-		return R.layout.fragment_me;
+		return R.layout.fragment_profile;
 	}
 
 	@Override
