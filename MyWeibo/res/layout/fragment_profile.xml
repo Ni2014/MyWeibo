@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text="我"
+            android:paddingBottom="10dp"
             android:textSize="@dimen/text_size_large" />
 
         <TextView
@@ -40,12 +41,132 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/light_gray"
             android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/profile_iv_portrait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile_portrait" />
+
+                <TextView
+                    android:id="@+id/profile_tv_account_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/profile_iv_portrait"
+                    android:text="ShengView"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/profile_tv_account_intruduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_tv_account_name"
+                    android:layout_toRightOf="@id/profile_iv_portrait"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="简介：暂无介绍"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_xsmall" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/messages_card_arrow" />
+            </RelativeLayout>
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@drawable/shape_line"/>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:gravity="center">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="67"
+                        android:textSize="@dimen/text_size_xsmall"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微博"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/dark_gray"/>
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:orientation="vertical">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="80"
+                        android:textSize="@dimen/text_size_xsmall"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="关注"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/dark_gray"/>
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:orientation="vertical">
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="41"
+                        android:textSize="@dimen/text_size_xsmall"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="粉丝"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/dark_gray"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/shape_line"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
+                android:layout_marginTop="12dp"
                 android:orientation="horizontal"
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
@@ -70,7 +191,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="0.5dp"
                 android:background="@drawable/shape_line" />
 
             <LinearLayout
@@ -94,14 +215,14 @@
                     android:layout_weight="1"
                     android:drawableRight="@drawable/messages_card_arrow"
                     android:paddingLeft="15dp"
-                    android:text="微博等级"
                     android:paddingRight="15dp"
+                    android:text="微博等级"
                     android:textSize="@dimen/text_size_small" />
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="0.5dp"
                 android:background="@drawable/shape_line" />
 
             <LinearLayout
@@ -125,14 +246,14 @@
                     android:layout_weight="1"
                     android:drawableRight="@drawable/messages_card_arrow"
                     android:paddingLeft="15dp"
-                    android:text="编辑资料"
                     android:paddingRight="15dp"
+                    android:text="编辑资料"
                     android:textSize="@dimen/text_size_small" />
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="0.5dp"
                 android:background="@drawable/shape_line" />
 
             <LinearLayout
@@ -162,14 +283,14 @@
                         android:layout_weight="1"
                         android:drawableRight="@drawable/messages_card_arrow"
                         android:paddingLeft="15dp"
-                        android:text="我的相册"
                         android:paddingRight="15dp"
+                        android:text="我的相册"
                         android:textSize="@dimen/text_size_small" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -193,14 +314,14 @@
                         android:layout_weight="1"
                         android:drawableRight="@drawable/messages_card_arrow"
                         android:paddingLeft="15dp"
-                        android:text="我的点评"
                         android:paddingRight="15dp"
+                        android:text="我的点评"
                         android:textSize="@dimen/text_size_small" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -224,14 +345,14 @@
                         android:layout_weight="1"
                         android:drawableRight="@drawable/messages_card_arrow"
                         android:paddingLeft="15dp"
-                        android:text="我的赞"
                         android:paddingRight="15dp"
+                        android:text="我的赞"
                         android:textSize="@dimen/text_size_small" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
             </LinearLayout>
 
@@ -262,14 +383,14 @@
                         android:layout_weight="1"
                         android:drawableRight="@drawable/messages_card_arrow"
                         android:paddingLeft="15dp"
-                        android:text="微博会员"
                         android:paddingRight="15dp"
+                        android:text="微博会员"
                         android:textSize="@dimen/text_size_small" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -293,14 +414,14 @@
                         android:layout_weight="1"
                         android:drawableRight="@drawable/messages_card_arrow"
                         android:paddingLeft="15dp"
-                        android:text="微博运动"
                         android:paddingRight="15dp"
+                        android:text="微博运动"
                         android:textSize="@dimen/text_size_small" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -324,14 +445,14 @@
                         android:layout_weight="1"
                         android:drawableRight="@drawable/messages_card_arrow"
                         android:paddingLeft="15dp"
-                        android:text="微博支付"
                         android:paddingRight="15dp"
+                        android:text="微博支付"
                         android:textSize="@dimen/text_size_small" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
             </LinearLayout>
 
@@ -357,14 +478,14 @@
                     android:layout_weight="1"
                     android:drawableRight="@drawable/messages_card_arrow"
                     android:paddingLeft="15dp"
-                    android:text="草稿箱"
                     android:paddingRight="15dp"
+                    android:text="草稿箱"
                     android:textSize="@dimen/text_size_small" />
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="0.5dp"
                 android:background="@drawable/shape_line" />
 
             <LinearLayout
@@ -389,8 +510,8 @@
                     android:layout_weight="1"
                     android:drawableRight="@drawable/messages_card_arrow"
                     android:paddingLeft="15dp"
-                    android:text="更多"
                     android:paddingRight="15dp"
+                    android:text="更多"
                     android:textSize="@dimen/text_size_small" />
             </LinearLayout>
 
