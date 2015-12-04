@@ -22,10 +22,12 @@
             android:textSize="@dimen/text_size_large" />
 
         <TextView
+            android:id="@+id/profile_tv_settings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:text="设置"
+            android:textColor="@drawable/selector_setting_profile"
             android:textSize="@dimen/text_size_middle" />
     </RelativeLayout>
 
@@ -36,7 +38,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
 
         <LinearLayout
             android:layout_width="match_parent"

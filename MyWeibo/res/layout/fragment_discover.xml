@@ -21,6 +21,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:editable="false"
             android:background="@drawable/shape_search_discover"
             android:drawableLeft="@drawable/tabbar_discover"
             android:paddingBottom="5dp"
@@ -39,13 +40,24 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+          <!--   <android.support.v4.view.ViewPager
+                android:id="@+id/discover_vp_pic"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                
+            </android.support.v4.view.ViewPager> -->
+            <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/discover_pic"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -69,7 +81,7 @@
                         android:textSize="@dimen/text_size_small" />
 
                     <View
-                        android:layout_width="1dp"
+                        android:layout_width="0.5dp"
                         android:layout_height="15dp"
                         android:background="@drawable/shape_line" />
 
@@ -86,7 +98,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -106,7 +118,7 @@
                         android:textSize="@dimen/text_size_small" />
 
                     <View
-                        android:layout_width="1dp"
+                        android:layout_width="0.5dp"
                         android:layout_height="15dp"
                         android:background="@drawable/shape_line" />
 
@@ -123,7 +135,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
             </LinearLayout>
 
@@ -162,7 +174,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -193,7 +205,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
             </LinearLayout>
 
@@ -232,7 +244,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -263,7 +275,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -294,7 +306,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
             </LinearLayout>
 
@@ -333,7 +345,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -364,7 +376,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -395,7 +407,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -426,7 +438,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -457,7 +469,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -488,7 +500,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -519,7 +531,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
 
                 <LinearLayout
@@ -550,7 +562,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="0.5dp"
                     android:background="@drawable/shape_line" />
             </LinearLayout>
         </LinearLayout>
