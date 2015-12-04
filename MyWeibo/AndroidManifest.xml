@@ -5,6 +5,9 @@
     android:versionName="1.0" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -25,6 +28,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.SettingsActivity" >
+        </activity>
+        <activity android:name=".activity.PopupActivity" >
+        </activity>
+        <activity android:name=".activity.WeiboTestActivity" >
         </activity>
     </application>
 

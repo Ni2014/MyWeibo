@@ -1,17 +1,16 @@
 package com.allen.myweibo.fragment;
 
-import com.allen.myweibo.R;
-import com.allen.myweibo.activity.SettingsActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.allen.myweibo.R;
+import com.allen.myweibo.activity.SettingsActivity;
 
 /**
  * 个人
@@ -25,9 +24,8 @@ public class AboutMeFragment extends Fragment implements OnClickListener {
 	private TextView mSettingTv;
 
 	@Override
-	@Nullable
 	public View onCreateView(LayoutInflater inflater,
-			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+			 ViewGroup container, Bundle savedInstanceState) {
 		mLayoutView = inflater.inflate(R.layout.fragment_profile, null);
 		findViews();
 		setListeners();

@@ -39,10 +39,10 @@
             android:drawableTop="@drawable/selector_tabbar_msg"
             android:text="消息" />
 
-        <RadioButton
+         <RadioButton
             android:id="@+id/main_rb_plus"
             style="@style/tab_rb_style"
-            android:drawableTop="@drawable/selector_tabbar_plus" />
+            android:drawableTop="@drawable/selector_tabbar_plus" /> 
 
         <RadioButton
             android:id="@+id/main_rb_discover"

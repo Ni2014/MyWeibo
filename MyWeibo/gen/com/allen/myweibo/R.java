@@ -11,127 +11,177 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int black=0x7f040001;
-        public static final int dark_gray=0x7f040002;
-        public static final int light_gray=0x7f040004;
-        public static final int middle_gray=0x7f040003;
-        public static final int origin=0x7f040000;
-        public static final int red=0x7f040006;
-        public static final int white=0x7f040005;
+        public static final int black=0x7f070003;
+        public static final int com_sina_weibo_sdk_blue=0x7f070000;
+        public static final int com_sina_weibo_sdk_loginview_text_color=0x7f070001;
+        public static final int dark_gray=0x7f070004;
+        public static final int light_gray=0x7f070006;
+        public static final int middle_gray=0x7f070005;
+        public static final int origin=0x7f070002;
+        public static final int red=0x7f070008;
+        public static final int white=0x7f070007;
     }
     public static final class dimen {
-        public static final int text_size_large=0x7f050002;
-        public static final int text_size_middle=0x7f050003;
-        public static final int text_size_small=0x7f050004;
-        public static final int text_size_xlarge=0x7f050001;
-        public static final int text_size_xsmall=0x7f050005;
+        /**      <dimen name="weibosdk_dialog_left_margin">10dp</dimen>
+    <dimen name="weibosdk_dialog_top_margin">30dp</dimen>
+    <dimen name="weibosdk_dialog_right_margin">10dp</dimen>
+    <dimen name="weibosdk_dialog_bottom_margin">10dp</dimen> 
+         */
+        public static final int activity_horizontal_margin=0x7f040000;
+        public static final int activity_vertical_margin=0x7f040001;
+        public static final int com_sina_weibo_sdk_loginview_compound_drawable_padding=0x7f040008;
+        public static final int com_sina_weibo_sdk_loginview_padding=0x7f040003;
+        public static final int com_sina_weibo_sdk_loginview_padding_bottom=0x7f040007;
+        public static final int com_sina_weibo_sdk_loginview_padding_left=0x7f040004;
+        public static final int com_sina_weibo_sdk_loginview_padding_right=0x7f040005;
+        public static final int com_sina_weibo_sdk_loginview_padding_top=0x7f040006;
+        public static final int com_sina_weibo_sdk_loginview_text_size=0x7f040002;
+        public static final int text_size_large=0x7f04000b;
+        public static final int text_size_middle=0x7f04000c;
+        public static final int text_size_small=0x7f04000d;
+        public static final int text_size_xlarge=0x7f04000a;
+        public static final int text_size_xsmall=0x7f04000e;
         /**  TextSize 
          */
-        public static final int text_size_xxlarge=0x7f050000;
-        public static final int text_size_xxsmall=0x7f050006;
+        public static final int text_size_xxlarge=0x7f040009;
+        public static final int text_size_xxsmall=0x7f04000f;
     }
     public static final class drawable {
-        public static final int card_weibo_icon=0x7f020000;
-        public static final int compose_product_plus=0x7f020001;
-        public static final int discover_app=0x7f020002;
-        public static final int discover_around=0x7f020003;
-        public static final int discover_city=0x7f020004;
-        public static final int discover_film=0x7f020005;
-        public static final int discover_find_people=0x7f020006;
-        public static final int discover_game_center=0x7f020007;
-        public static final int discover_hot_weibo=0x7f020008;
-        public static final int discover_more=0x7f020009;
-        public static final int discover_music=0x7f02000a;
-        public static final int discover_pic=0x7f02000b;
-        public static final int discover_run=0x7f02000c;
-        public static final int discover_shopping=0x7f02000d;
-        public static final int discover_stock=0x7f02000e;
-        public static final int discover_travel=0x7f02000f;
-        public static final int findfriend_businesscard_userinfo_me_relationship_indicator_plus=0x7f020010;
-        public static final int home_item_comment=0x7f020011;
-        public static final int home_item_pic=0x7f020012;
-        public static final int home_item_praise=0x7f020013;
-        public static final int home_item_retweet=0x7f020014;
-        public static final int home_portrait=0x7f020015;
-        public static final int ic_launcher=0x7f020016;
-        public static final int message_add_background=0x7f020017;
-        public static final int message_choosegroup=0x7f020018;
-        public static final int message_creategroup_portrait=0x7f020019;
-        public static final int message_privatechat_background=0x7f02001a;
-        public static final int message_privatechat_background_highlight=0x7f02001b;
-        public static final int message_privatechat_time_background=0x7f02001c;
-        public static final int messages_card_arrow=0x7f02001d;
-        public static final int messagescenter_at=0x7f02001e;
-        public static final int messagescenter_comments=0x7f02001f;
-        public static final int messagescenter_good=0x7f020020;
-        public static final int messagescenter_messagebox=0x7f020021;
-        public static final int messagescenter_subscription=0x7f020022;
-        public static final int navigationbar_arrow_down=0x7f020023;
-        public static final int navigationbar_back=0x7f020024;
-        public static final int navigationbar_back_highlighted=0x7f020025;
-        public static final int navigationbar_close_highlighted=0x7f020026;
-        public static final int navigationbar_friendattention=0x7f020027;
-        public static final int navigationbar_friendattention_dot_highlighted=0x7f020028;
-        public static final int navigationbar_friendattention_highlighted=0x7f020029;
-        public static final int navigationbar_home=0x7f02002a;
-        public static final int navigationbar_home_highlighted=0x7f02002b;
-        public static final int navigationbar_icon_radar_animation_ring=0x7f02002c;
-        public static final int navigationbar_search_voice=0x7f02002d;
-        public static final int profile_album=0x7f02002e;
-        public static final int profile_comments=0x7f02002f;
-        public static final int profile_drafts=0x7f020030;
-        public static final int profile_edit_info=0x7f020031;
-        public static final int profile_friends=0x7f020032;
-        public static final int profile_more=0x7f020033;
-        public static final int profile_portrait=0x7f020034;
-        public static final int profile_praise=0x7f020035;
-        public static final int profile_vip=0x7f020036;
-        public static final int profile_weibo_pay=0x7f020037;
-        public static final int profile_weibo_rank=0x7f020038;
-        public static final int profile_weibo_sport=0x7f020039;
-        public static final int radar_card_guide_hot=0x7f02003a;
-        public static final int selector_setting_profile=0x7f02003b;
-        public static final int selector_tabbar_discover=0x7f02003c;
-        public static final int selector_tabbar_home=0x7f02003d;
-        public static final int selector_tabbar_msg=0x7f02003e;
-        public static final int selector_tabbar_plus=0x7f02003f;
-        public static final int selector_tabbar_profile=0x7f020040;
-        public static final int selector_tabbar_text_color=0x7f020041;
-        public static final int shape_line=0x7f020042;
-        public static final int shape_search_discover=0x7f020043;
-        public static final int shape_search_home=0x7f020044;
-        public static final int shape_search_message=0x7f020045;
-        public static final int tabbar_compose_camera=0x7f020046;
-        public static final int tabbar_compose_icon_add=0x7f020047;
-        public static final int tabbar_compose_icon_add_highlighted=0x7f020048;
-        public static final int tabbar_compose_idea=0x7f020049;
-        public static final int tabbar_compose_lbs=0x7f02004a;
-        public static final int tabbar_compose_more=0x7f02004b;
-        public static final int tabbar_compose_photo=0x7f02004c;
-        public static final int tabbar_compose_review=0x7f02004d;
-        public static final int tabbar_discover=0x7f02004e;
-        public static final int tabbar_discover_highlighted=0x7f02004f;
-        public static final int tabbar_home_highlighted=0x7f020050;
-        public static final int tabbar_message_center=0x7f020051;
-        public static final int tabbar_message_center_highlighted=0x7f020052;
-        public static final int tabbar_profile=0x7f020053;
-        public static final int tabbar_profile_highlighted=0x7f020054;
-        public static final int userinfo_me_relationship_indicator_plus=0x7f020055;
-        public static final int videoplayer_icon_back_highlighted=0x7f020056;
-        public static final int welcome_android_logo=0x7f020057;
-        public static final int welcome_android_slogan=0x7f020058;
+        public static final int camera_close_highlighted=0x7f020000;
+        public static final int card_weibo_icon=0x7f020001;
+        public static final int com_sina_weibo_sdk_button_blue=0x7f020002;
+        public static final int com_sina_weibo_sdk_button_grey=0x7f020003;
+        public static final int com_sina_weibo_sdk_login_button_with_account_text=0x7f020004;
+        public static final int com_sina_weibo_sdk_login_button_with_frame_logo=0x7f020005;
+        public static final int com_sina_weibo_sdk_login_button_with_original_logo=0x7f020006;
+        public static final int compose_product_plus=0x7f020007;
+        public static final int discover_app=0x7f020008;
+        public static final int discover_around=0x7f020009;
+        public static final int discover_city=0x7f02000a;
+        public static final int discover_film=0x7f02000b;
+        public static final int discover_find_people=0x7f02000c;
+        public static final int discover_game_center=0x7f02000d;
+        public static final int discover_hot_weibo=0x7f02000e;
+        public static final int discover_more=0x7f02000f;
+        public static final int discover_music=0x7f020010;
+        public static final int discover_pic=0x7f020011;
+        public static final int discover_run=0x7f020012;
+        public static final int discover_shopping=0x7f020013;
+        public static final int discover_stock=0x7f020014;
+        public static final int discover_travel=0x7f020015;
+        public static final int findfriend_businesscard_userinfo_me_relationship_indicator_plus=0x7f020016;
+        public static final int home_item_comment=0x7f020017;
+        public static final int home_item_pic=0x7f020018;
+        public static final int home_item_pics=0x7f020019;
+        public static final int home_item_praise=0x7f02001a;
+        public static final int home_item_retweet=0x7f02001b;
+        public static final int home_portrait=0x7f02001c;
+        public static final int ic_com_sina_weibo_sdk_button_blue_focused=0x7f02001d;
+        public static final int ic_com_sina_weibo_sdk_button_blue_normal=0x7f02001e;
+        public static final int ic_com_sina_weibo_sdk_button_blue_pressed=0x7f02001f;
+        public static final int ic_com_sina_weibo_sdk_button_grey_focused=0x7f020020;
+        public static final int ic_com_sina_weibo_sdk_button_grey_normal=0x7f020021;
+        public static final int ic_com_sina_weibo_sdk_button_grey_pressed=0x7f020022;
+        public static final int ic_com_sina_weibo_sdk_login_button_with_frame_logo_focused=0x7f020023;
+        public static final int ic_com_sina_weibo_sdk_login_button_with_frame_logo_normal=0x7f020024;
+        public static final int ic_com_sina_weibo_sdk_login_button_with_frame_logo_pressed=0x7f020025;
+        public static final int ic_com_sina_weibo_sdk_login_with_account_text_focused=0x7f020026;
+        public static final int ic_com_sina_weibo_sdk_login_with_account_text_normal=0x7f020027;
+        public static final int ic_com_sina_weibo_sdk_login_with_account_text_pressed=0x7f020028;
+        public static final int ic_com_sina_weibo_sdk_login_with_text=0x7f020029;
+        public static final int ic_com_sina_weibo_sdk_logo=0x7f02002a;
+        public static final int ic_launcher=0x7f02002b;
+        public static final int login_close=0x7f02002c;
+        public static final int login_fonud_check=0x7f02002d;
+        public static final int login_key=0x7f02002e;
+        public static final int login_key_hightlighted=0x7f02002f;
+        public static final int login_picture=0x7f020030;
+        public static final int login_user=0x7f020031;
+        public static final int message_add_background=0x7f020032;
+        public static final int message_choosegroup=0x7f020033;
+        public static final int message_creategroup_portrait=0x7f020034;
+        public static final int message_privatechat_background=0x7f020035;
+        public static final int message_privatechat_background_highlight=0x7f020036;
+        public static final int message_privatechat_time_background=0x7f020037;
+        public static final int messages_card_arrow=0x7f020038;
+        public static final int messagescenter_at=0x7f020039;
+        public static final int messagescenter_comments=0x7f02003a;
+        public static final int messagescenter_good=0x7f02003b;
+        public static final int messagescenter_messagebox=0x7f02003c;
+        public static final int messagescenter_subscription=0x7f02003d;
+        public static final int navigationbar_arrow_down=0x7f02003e;
+        public static final int navigationbar_arrow_up=0x7f02003f;
+        public static final int navigationbar_back=0x7f020040;
+        public static final int navigationbar_back_highlighted=0x7f020041;
+        public static final int navigationbar_close_highlighted=0x7f020042;
+        public static final int navigationbar_friendattention=0x7f020043;
+        public static final int navigationbar_friendattention_dot=0x7f020044;
+        public static final int navigationbar_friendattention_dot_highlighted=0x7f020045;
+        public static final int navigationbar_friendattention_highlighted=0x7f020046;
+        public static final int navigationbar_home=0x7f020047;
+        public static final int navigationbar_home_highlighted=0x7f020048;
+        public static final int navigationbar_icon_radar=0x7f020049;
+        public static final int navigationbar_icon_radar_animation_ring=0x7f02004a;
+        public static final int navigationbar_icon_radar_highlighted=0x7f02004b;
+        public static final int navigationbar_search_voice=0x7f02004c;
+        public static final int profile_album=0x7f02004d;
+        public static final int profile_comments=0x7f02004e;
+        public static final int profile_drafts=0x7f02004f;
+        public static final int profile_edit_info=0x7f020050;
+        public static final int profile_friends=0x7f020051;
+        public static final int profile_more=0x7f020052;
+        public static final int profile_portrait=0x7f020053;
+        public static final int profile_praise=0x7f020054;
+        public static final int profile_vip=0x7f020055;
+        public static final int profile_weibo_pay=0x7f020056;
+        public static final int profile_weibo_rank=0x7f020057;
+        public static final int profile_weibo_sport=0x7f020058;
+        public static final int radar_card_guide_hot=0x7f020059;
+        public static final int selector_setting_profile=0x7f02005a;
+        public static final int selector_tabbar_discover=0x7f02005b;
+        public static final int selector_tabbar_home=0x7f02005c;
+        public static final int selector_tabbar_msg=0x7f02005d;
+        public static final int selector_tabbar_plus=0x7f02005e;
+        public static final int selector_tabbar_profile=0x7f02005f;
+        public static final int selector_tabbar_text_color=0x7f020060;
+        public static final int shape_line=0x7f020061;
+        public static final int shape_search_discover=0x7f020062;
+        public static final int shape_search_home=0x7f020063;
+        public static final int shape_search_message=0x7f020064;
+        public static final int tabbar_compose_background_icon_add=0x7f020065;
+        public static final int tabbar_compose_background_icon_close=0x7f020066;
+        public static final int tabbar_compose_camera=0x7f020067;
+        public static final int tabbar_compose_icon_add=0x7f020068;
+        public static final int tabbar_compose_icon_add_highlighted=0x7f020069;
+        public static final int tabbar_compose_idea=0x7f02006a;
+        public static final int tabbar_compose_lbs=0x7f02006b;
+        public static final int tabbar_compose_more=0x7f02006c;
+        public static final int tabbar_compose_photo=0x7f02006d;
+        public static final int tabbar_compose_review=0x7f02006e;
+        public static final int tabbar_compose_weibo=0x7f02006f;
+        public static final int tabbar_discover=0x7f020070;
+        public static final int tabbar_discover_highlighted=0x7f020071;
+        public static final int tabbar_home_highlighted=0x7f020072;
+        public static final int tabbar_message_center=0x7f020073;
+        public static final int tabbar_message_center_highlighted=0x7f020074;
+        public static final int tabbar_profile=0x7f020075;
+        public static final int tabbar_profile_highlighted=0x7f020076;
+        public static final int userinfo_me_relationship_indicator_plus=0x7f020077;
+        public static final int videoplayer_icon_back_highlighted=0x7f020078;
+        public static final int welcome_android_logo=0x7f020079;
+        public static final int welcome_android_slogan=0x7f02007a;
     }
     public static final class id {
-        public static final int home_iv_chat=0x7f08000f;
-        public static final int home_iv_friendattention=0x7f080009;
-        public static final int home_iv_portrait=0x7f080014;
-        public static final int home_iv_rader=0x7f08000b;
-        public static final int home_lv_weibo=0x7f08000c;
-        public static final int home_tv_account=0x7f08000a;
-        public static final int home_tv_account_name=0x7f080015;
-        public static final int home_tv_find_group=0x7f08000d;
-        public static final int home_tv_item_time=0x7f080016;
-        public static final int home_tv_message=0x7f08000e;
+        public static final int home_iv_chat=0x7f080013;
+        public static final int home_iv_friendattention=0x7f08000d;
+        public static final int home_iv_portrait=0x7f080018;
+        public static final int home_iv_rader=0x7f08000f;
+        public static final int home_lv_weibo=0x7f080010;
+        public static final int home_tv_account=0x7f08000e;
+        public static final int home_tv_account_name=0x7f080019;
+        public static final int home_tv_find_group=0x7f080011;
+        public static final int home_tv_item_time=0x7f08001a;
+        public static final int home_tv_message=0x7f080012;
         public static final int main_rb_discover=0x7f080006;
         public static final int main_rb_home=0x7f080003;
         public static final int main_rb_message=0x7f080004;
@@ -140,29 +190,47 @@ public final class R {
         public static final int main_rg_menu=0x7f080002;
         public static final int main_rllyt_all=0x7f080000;
         public static final int main_vp_viewpager=0x7f080001;
-        public static final int profile_iv_portrait=0x7f080011;
-        public static final int profile_tv_account_intruduce=0x7f080013;
-        public static final int profile_tv_account_name=0x7f080012;
-        public static final int profile_tv_settings=0x7f080010;
-        public static final int settings_iv_set=0x7f080008;
+        public static final int popup_iv_close=0x7f080008;
+        public static final int profile_iv_portrait=0x7f080015;
+        public static final int profile_tv_account_intruduce=0x7f080017;
+        public static final int profile_tv_account_name=0x7f080016;
+        public static final int profile_tv_settings=0x7f080014;
+        public static final int settings_iv_set=0x7f080009;
+        public static final int test_btn_clear=0x7f08000c;
+        public static final int test_btn_info=0x7f08000b;
+        public static final int test_btn_sso=0x7f08000a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_settings=0x7f030001;
-        public static final int fragment_discover=0x7f030002;
-        public static final int fragment_home=0x7f030003;
-        public static final int fragment_message=0x7f030004;
-        public static final int fragment_profile=0x7f030005;
-        public static final int fragment_setting=0x7f030006;
-        public static final int fragment_splash=0x7f030007;
-        public static final int item_home_listview=0x7f030008;
+        public static final int activity_popup=0x7f030001;
+        public static final int activity_settings=0x7f030002;
+        public static final int activity_weibo_test=0x7f030003;
+        public static final int fragment_discover=0x7f030004;
+        public static final int fragment_home=0x7f030005;
+        public static final int fragment_message=0x7f030006;
+        public static final int fragment_profile=0x7f030007;
+        public static final int fragment_setting=0x7f030008;
+        public static final int fragment_splash=0x7f030009;
+        public static final int item_home_listview=0x7f03000a;
     }
     public static final class string {
-        public static final int app_name=0x7f060000;
-        public static final int main_activity=0x7f060001;
+        public static final int app_name=0x7f050003;
+        public static final int com_sina_weibo_sdk_login=0x7f050001;
+        public static final int com_sina_weibo_sdk_login_with_weibo_account=0x7f050000;
+        public static final int com_sina_weibo_sdk_logout=0x7f050002;
+        public static final int main_activity=0x7f050004;
     }
     public static final class style {
         /** 
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
 
@@ -185,11 +253,15 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070002;
-        public static final int tab_rb_style=0x7f070001;
+        public static final int AppTheme=0x7f060001;
+        public static final int com_sina_weibo_sdk_loginview_default_style=0x7f060002;
+        public static final int com_sina_weibo_sdk_loginview_silver_style=0x7f060003;
+        public static final int tab_rb_style=0x7f060004;
     }
 }

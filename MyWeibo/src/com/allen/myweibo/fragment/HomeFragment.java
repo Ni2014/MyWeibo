@@ -1,7 +1,6 @@
 package com.allen.myweibo.fragment;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,9 +20,8 @@ public class HomeFragment extends Fragment {
 	private View mView;
 	
 	@Override
-	@Nullable
 	public View onCreateView(LayoutInflater inflater,
-			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+			 ViewGroup container,  Bundle savedInstanceState) {
 		mView = inflater.inflate(R.layout.fragment_home, null);
 		initViews();
 		return mView;

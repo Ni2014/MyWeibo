@@ -1,10 +1,10 @@
 package com.allen.myweibo.activity;
 
-import com.allen.myweibo.utils.ActivityStack;
-
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Window;
+
+import com.allen.myweibo.utils.ActivityStack;
 
 public abstract class BaseActivity extends FragmentActivity {
 
