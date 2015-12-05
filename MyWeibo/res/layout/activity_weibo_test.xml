@@ -20,6 +20,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="clear"/>
+    <Button
+        android:id="@+id/test_btn_text_weibo" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发纯文字微博"/>
+    <Button
+        android:id="@+id/test_btn_img_text_weibo" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发图文微博"/>
+    
     
     
 

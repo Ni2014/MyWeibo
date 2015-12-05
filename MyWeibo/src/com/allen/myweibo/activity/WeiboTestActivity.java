@@ -2,8 +2,10 @@ package com.allen.myweibo.activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -18,15 +20,18 @@ import com.sina.weibo.sdk.auth.WeiboAuthListener;
 import com.sina.weibo.sdk.auth.sso.SsoHandler;
 import com.sina.weibo.sdk.exception.WeiboException;
 import com.sina.weibo.sdk.net.RequestListener;
+import com.sina.weibo.sdk.openapi.StatusesAPI;
 import com.sina.weibo.sdk.openapi.UsersAPI;
 
 public class WeiboTestActivity extends Activity implements OnClickListener {
 
-	private Button mSsoBtn, mInfoBtn, mClearBtn;
+	private Button mSsoBtn, mInfoBtn, mClearBtn, mTextWeiboBtn, mMixWeiboBtn;
 	private SsoHandler mSsoHandler;
 	private AuthInfo mAuthInfo;
 	private Oauth2AccessToken mAccessToken;
-	UsersAPI mUserApi;
+	private UsersAPI mUserApi;
+	private StatusesAPI mStatusApi;
+	private Drawable mDrawable;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +46,8 @@ public class WeiboTestActivity extends Activity implements OnClickListener {
 		mSsoBtn = (Button) findViewById(R.id.test_btn_sso);
 		mInfoBtn = (Button) findViewById(R.id.test_btn_info);
 		mClearBtn = (Button) findViewById(R.id.test_btn_clear);
+		mTextWeiboBtn = (Button) findViewById(R.id.test_btn_text_weibo);
+		mMixWeiboBtn = (Button) findViewById(R.id.test_btn_img_text_weibo);
 
 	}
 
@@ -50,12 +57,17 @@ public class WeiboTestActivity extends Activity implements OnClickListener {
 		mSsoHandler = new SsoHandler(WeiboTestActivity.this, mAuthInfo);
 		mAccessToken = AccessTokenKeeper.readAccessToken(this);
 		mUserApi = new UsersAPI(this, ConstantsUtil.APP_KEY, mAccessToken);
+		mStatusApi = new StatusesAPI(this, ConstantsUtil.APP_KEY, mAccessToken);
+		mDrawable = getResources().getDrawable(R.drawable.discover_pic);
+
 	}
 
 	private void setListeners() {
 		mSsoBtn.setOnClickListener(this);
 		mInfoBtn.setOnClickListener(this);
 		mClearBtn.setOnClickListener(this);
+		mTextWeiboBtn.setOnClickListener(this);
+		mMixWeiboBtn.setOnClickListener(this);
 	}
 
 	@Override
@@ -69,6 +81,41 @@ public class WeiboTestActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.test_btn_clear:
 			AccessTokenKeeper.clear(getApplicationContext());
+			break;
+		case R.id.test_btn_text_weibo:
+			mStatusApi.update("发送一条纯文字的微博", null, null, new RequestListener() {
+
+				@Override
+				public void onWeiboException(WeiboException arg0) {
+					// TODO Auto-generated method stub
+
+				}
+
+				@Override
+				public void onComplete(String arg0) {
+					Toast.makeText(getApplicationContext(), "发送成功",
+							Toast.LENGTH_LONG).show();
+
+				}
+			});
+			break;
+		case R.id.test_btn_img_text_weibo:
+			Bitmap bitmap = ((BitmapDrawable) mDrawable).getBitmap();
+			mStatusApi.upload("测试图文微博", bitmap, null, null,
+					new RequestListener() {
+
+						@Override
+						public void onWeiboException(WeiboException arg0) {
+							Toast.makeText(getApplicationContext(),
+									"Error" + arg0, Toast.LENGTH_LONG).show();
+						}
+
+						@Override
+						public void onComplete(String arg0) {
+							Toast.makeText(getApplicationContext(), "发送图文微博成功",
+									Toast.LENGTH_LONG).show();
+						}
+					});
 			break;
 
 		default:

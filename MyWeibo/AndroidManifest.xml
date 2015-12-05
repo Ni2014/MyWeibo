@@ -33,6 +33,9 @@
         </activity>
         <activity android:name=".activity.WeiboTestActivity" >
         </activity>
+        <activity android:name=".activity.SendTextWeiboActivity"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
     </application>
 
 </manifest>

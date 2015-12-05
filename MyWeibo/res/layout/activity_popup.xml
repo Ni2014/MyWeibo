@@ -29,79 +29,164 @@
                 android:orientation="horizontal"
                 android:paddingTop="70dp" >
 
-                <TextView
+                <LinearLayout
+                    android:id="@+id/popup_llyt_text_weibo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:drawablePadding="8dp"
-                    android:drawableTop="@drawable/tabbar_compose_idea"
                     android:gravity="center"
-                    android:text="文字"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_small" />
+                    android:orientation="vertical" >
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:drawablePadding="8dp"
-                    android:drawableTop="@drawable/tabbar_compose_photo"
-                    android:gravity="center"
-                    android:text="照片/视频"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_small" />
+                    <ImageView
+                        android:id="@+id/popup_iv_text_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/tabbar_compose_idea" />
 
-                <TextView
+                    <TextView
+                        android:id="@+id/popup_tv_text_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="文字"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/popup_llyt_pic_weibo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:drawablePadding="8dp"
-                    android:drawableTop="@drawable/tabbar_compose_weibo"
                     android:gravity="center"
-                    android:text="长微博"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_small" />
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/popup_iv_pic_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/tabbar_compose_photo" />
+
+                    <TextView
+                        android:id="@+id/popup_tv_pic_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="照片/视频"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/popup_llyt_long_weibo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/popup_iv_long_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/tabbar_compose_weibo" />
+
+                    <TextView
+                        android:id="@+id/popup_tv_long_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="长微博"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:orientation="horizontal"
-                android:paddingTop="15dp" >
+                    android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
 
-                <TextView
+                <LinearLayout
+                    android:id="@+id/popup_llyt_lbs_weibo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:drawablePadding="8dp"
-                    android:drawableTop="@drawable/tabbar_compose_lbs"
                     android:gravity="center"
-                    android:text="签到"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_small" />
+                    android:orientation="vertical" >
 
-                <TextView
+                    <ImageView
+                        android:id="@+id/popup_iv_lbs_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/tabbar_compose_lbs" />
+
+                    <TextView
+                        android:id="@+id/popup_tv_lbs_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="签到"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/popup_llyt_comments_weibo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:drawablePadding="8dp"
-                    android:drawableTop="@drawable/tabbar_compose_review"
                     android:gravity="center"
-                    android:text="点评"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_small" />
+                    android:orientation="vertical" >
 
-                <TextView
+                    <ImageView
+                        android:id="@+id/popup_iv_comments_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/tabbar_compose_review" />
+
+                    <TextView
+                        android:id="@+id/popup_tv_comments_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点评"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/popup_llyt_more_weibo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:drawablePadding="8dp"
-                    android:drawableTop="@drawable/tabbar_compose_more"
                     android:gravity="center"
-                    android:text="更多"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size_small" />
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/popup_iv_more_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/tabbar_compose_more" />
+
+                    <TextView
+                        android:id="@+id/popup_tv_more_weibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更多"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -112,8 +197,7 @@
         android:layout_gravity="bottom"
         android:background="@color/white"
         android:gravity="center"
-        android:orientation="horizontal"
-         >
+        android:orientation="horizontal" >
 
         <ImageView
             android:id="@+id/popup_iv_close"
