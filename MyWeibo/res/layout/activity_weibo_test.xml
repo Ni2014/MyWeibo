@@ -6,50 +6,68 @@
     android:paddingLeft="20dp"
     android:paddingTop="50dp" >
 
-    <Button
-        android:id="@+id/test_btn_sso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="授权(仅客户端)" />
-
-    <Button
-        android:id="@+id/test_btn_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="获取用户信息" />
-
-    <Button
-        android:id="@+id/test_btn_clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="clear" />
-
-    <Button
-        android:id="@+id/test_btn_text_weibo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="发纯文字微博" />
-
-    <Button
-        android:id="@+id/test_btn_img_text_weibo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="发图文微博" />
-
-    <Button
-        android:id="@+id/test_btn_getinfo__weibo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="获取微博信息" />
-
-    <EditText
-        android:id="@+id/test_edt_info"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <ImageView
-        android:id="@+id/test_iv_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/card_weibo_icon"/>
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/test_btn_sso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="授权(仅客户端)" />
+
+            <Button
+                android:id="@+id/test_btn_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取用户信息" />
+
+            <Button
+                android:id="@+id/test_btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="clear" />
+
+            <Button
+                android:id="@+id/test_btn_text_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发纯文字微博" />
+
+            <Button
+                android:id="@+id/test_btn_img_text_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发图文微博" />
+
+            <Button
+                android:id="@+id/test_btn_getinfo__weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取微博信息" />
+
+            <EditText
+                android:id="@+id/test_edt_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/test_iv_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/card_weibo_icon" />
+
+            <ImageView
+                android:id="@+id/test_iv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/card_weibo_icon" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
