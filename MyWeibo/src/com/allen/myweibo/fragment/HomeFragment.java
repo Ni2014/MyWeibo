@@ -12,24 +12,37 @@ import com.allen.myweibo.adapter.ListViewAdapter;
 
 /**
  * 首页
- *
+ * 
  */
 public class HomeFragment extends Fragment {
 
 	private ListView mListView;
-	private View mView;
-	
+	private View mHomeView;
+
 	@Override
-	public View onCreateView(LayoutInflater inflater,
-			 ViewGroup container,  Bundle savedInstanceState) {
-		mView = inflater.inflate(R.layout.fragment_home, null);
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		mHomeView = inflater.inflate(R.layout.fragment_home, null);
+		findViews();
 		initViews();
-		return mView;
+		setListeners();
+		return mHomeView;
+	}
+
+	private void findViews() {
+		mListView = (ListView) mHomeView.findViewById(R.id.home_lv_weibo);
 	}
 
 	private void initViews() {
-		mListView = (ListView) mView.findViewById(R.id.home_lv_weibo);
 		ListViewAdapter adapter = new ListViewAdapter(getActivity());
+		View headView = LayoutInflater.from(getActivity()).inflate(
+				R.layout.header_home, null);
+		mListView.addHeaderView(headView);
 		mListView.setAdapter(adapter);
+		
 	}
+
+	private void setListeners() {
+	}
+
 }

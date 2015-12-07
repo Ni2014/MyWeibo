@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_search_home"
+        android:drawableLeft="@drawable/tabbar_discover"
+        android:editable="false"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="搜索"
+        android:textColor="@color/middle_gray"
+        android:textSize="@dimen/text_size_small" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/discover_pic" />
+
+</LinearLayout>

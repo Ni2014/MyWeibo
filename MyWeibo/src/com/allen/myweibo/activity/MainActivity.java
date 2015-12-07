@@ -5,6 +5,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -12,11 +14,13 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import com.allen.myweibo.R;
 import com.allen.myweibo.adapter.ViewPagerAdapter;
 
-public class MainActivity extends BaseActivity implements OnClickListener {
+public class MainActivity extends BaseActivity implements OnClickListener,
+		OnLongClickListener {
 
 	private ViewPager mViewPager;
 	private RadioGroup mTabRg;
-	private RadioButton mHomeRb, mMessageRb, mPlusRb, mDiscoverRb, mProfileRb;
+	private RadioButton mHomeRb, mMessageRb, mDiscoverRb, mProfileRb;
+	private ImageView mPlusIv;
 
 	public static final int TAB_HOME = 0;
 	public static final int TAB_MESSAGE = 1;
@@ -35,7 +39,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		mTabRg = (RadioGroup) findViewById(R.id.main_rg_menu);
 		mHomeRb = (RadioButton) findViewById(R.id.main_rb_home);
 		mMessageRb = (RadioButton) findViewById(R.id.main_rb_message);
-		mPlusRb = (RadioButton) findViewById(R.id.main_rb_plus);
+		mPlusIv = (ImageView) findViewById(R.id.main_iv_plus);
 		mDiscoverRb = (RadioButton) findViewById(R.id.main_rb_discover);
 		mProfileRb = (RadioButton) findViewById(R.id.main_rb_profile);
 	}
@@ -50,6 +54,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	private void initViewPager() {
 		ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(
 				getSupportFragmentManager());
+		mHomeRb.setChecked(true);
 		mViewPager.setAdapter(viewPagerAdapter);
 		mViewPager.setOffscreenPageLimit(4);
 		mViewPager.setCurrentItem(TAB_HOME);
@@ -96,7 +101,8 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	}
 
 	private void setListeners() {
-		mPlusRb.setOnClickListener(this);
+		mPlusIv.setOnClickListener(this);
+		mPlusIv.setOnLongClickListener(this);
 		mTabRg.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
 			@Override
@@ -125,7 +131,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	@Override
 	public void onClick(View view) {
 		switch (view.getId()) {
-		case R.id.main_rb_plus:
+		case R.id.main_iv_plus:
 			startActivity(new Intent(getApplicationContext(),
 					PopupActivity.class));
 			break;
@@ -133,6 +139,20 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		default:
 			break;
 		}
+	}
+
+	@Override
+	public boolean onLongClick(View view) {
+		switch (view.getId()) {
+		case R.id.main_iv_plus:
+			startActivity(new Intent(MainActivity.this,
+					SendTextWeiboActivity.class));
+			break;
+
+		default:
+			break;
+		}
+		return false;
 	}
 
 }
